@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Learn how to use the Firebase platform on the Web">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Friendly Chat</title>
+  <title>Juego de la memoria</title>
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -70,7 +70,9 @@
 
   <main id="contenedorprin" class="mdl-layout__content mdl-color--grey-100">
       <div id="icons">
-        <img src="images/ficha.png" id="ficha" class="draggable" alt="royal crown">
+        <img src="images/ficha.png" id="ficha1" class="draggable" alt="royal crown">
+        <img src="images/ficha.png" id="ficha2" class="draggable" alt="royal crown">
+        <img src="images/ficha.png" id="ficha3" class="draggable" alt="royal crown">
       </div>
     </div>
   </main>
@@ -98,6 +100,9 @@
     $(function(){
     $('.draggable').draggable({ scroll: true, cursor: "move"});
       });
+  $(".draggable").hover(function () {
+      $(this).toggleClass("glow");
+  });
   </script>
 </body>
 </html>

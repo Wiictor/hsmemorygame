@@ -210,4 +210,16 @@ main, #messages-card {
   display: block;
   padding-top: 100px;
   padding-left:100px;
+  border-radius:50%;
+}
+#ficha1{
+}
+#ficha2{
+
+}
+#ficha1,#ficha2,#ficha3{border-radius:50%;}
+.glow{
+  -webkit-box-shadow:0 0 40px #6fa7e2;
+-moz-box-shadow: 0 0 40px #6fa7e2;
+box-shadow:0 0 60px #6fa7e2;
 }
