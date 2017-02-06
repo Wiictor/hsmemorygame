@@ -1,21 +1,92 @@
+
 <!doctype html>
 <!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
+  Wiictor Website
+ __      __ .__ .__          __
+/  \    /  \|__||__|  ____ _/  |_  ____ _______
+\   \/\/   /|  ||  |_/ ___\\   __\/  _ \\_  __ \
+ \        / |  ||  |\  \___ |  | (  <_> )|  | \/
+  \__/\  /  |__||__| \___  >|__|  \____/ |__|
+       \/                \/
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNdyssossyhdmMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmh+:---------:/+shNMMMMNNNNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNds/:::--------::::::/smMMNNNNNNmhsooymNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNdo/:::::::----::::::::::/yNNNmdy+/:::::/hNNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms/:::::::::::::::::::::::::+hhs/:::::::::/hdmmNNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh+:::::::::::::::::::::::::::::+::::::::::-:::///+oyhdmNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh/:::::///:::::::::://///::::::::::::::::::-:::::::::::/+shdNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNd+/:::://////::::::////////::::::::::::::::::::::::::::::--::/oydNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs//::::/++++++/:::::/++++++o/:::::::::::::::-:::::::::::::::::::-:/shmNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNms//::::+ydysooo/:::::/oossyddy/:::::::::/:::::::::::::::::::::::::::-:/oymNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNh+/::::::+/+oss+/:::::::/ooso+////::::::::/:::::::::::::::::::::::::::::::-:+ydNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNh+/::::/:/::::::----------::///////::::::/::::::::::::::::::::::::::::::::::::::+ymNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMNNNy+::::::::///::---------------:::::::::::/::::::::::::::::::::::::::::::::::::::::::+oydNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMNNNNNmyo/::::::::::-----------------:::::::://:::::::::::::::::::::::::::::::::::::::::::::-/NNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNy+///:::::::-----------------:::::::/:::::::::::::::::::::/::::::::::::::::::::::::::oNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMNNNNNNNNms+/://///::::::::---------:::::::://:::::::::::/:::::::::::/:::::::::::::::::::--:::::oNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMNNNNNNNNds+/::::://///:::::::::::::::://+o+/:::::::::::::/:::::::::::/::::::::::::::::::::--/:::sMNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMNNNNNNNNhso/:::::::::::+yso++//////++ossss+/:::::::::::::/+/::::::::::/::::::::::::::::::::--/::/mMMNNNNNNNNMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMNNNNNNNNyos/:::::::::::+hhyssssssssssso++/:::::::::::::::/yso+///::::::://::::::::::::::::::--/:/dMMMNNNNNNNNNNMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMNNNNNNNNyoso/:::::::::/yhyssoooooooo+///:::::::::::::::::/yysosso+///::::::/:::::::::::::::::-:/omMMMMMNNNNNNNNNMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMNNNNNNNNyoss+/::::::::ohhyssooooooo+//::::::::::::::::::/oyyoooooosso+//:::::/::::::::::::::::-:yNMMMMMMMMNNNNNNNNMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMNNNNNNNhoooo+/:::::::ohhsssooooooo+/:::::::::::::::::/osysoo++ooooooosssoo++///::::::::::::::::/ydMMMMMMMMNNNNNNNNNMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMNNNNNNNdooooo/:::::::/hhsssoooooo+//:::::::::::///+ossysooo+++++++++oooooooossso//::::::::::::::ohyNMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMNNNNNNNmooooo+/:::::::yhysssoooooo/:::::::/+ooosssssoooo+++++++++++++++oooooooooooo//::::::::::::syydMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMNNNNNNNy+ooo+/:::::::ohysssoooooo/-::::::/yysoooo++++++++++++++++++++++++oooooo+++///::::::::::::hyyyNMMMMMMNNNNNNNNNNNMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMNNNNNNm+++oo+::::::::hhssssoooooo+//://+syyso++++++++++++++++++++++++++++++o+//:::::::::::::::::+hssymMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMNNNNNNNh+++++/:::::::+hysssoooooooooosssssooo++++++++++++++++++++++++++++++++::::::::::::::::::::yyssyhMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMNNNNNNNo+++++/:::::::ohysssoooooooooooooooo++++++++++++++++++++++++++++++++/::::::::::::::::::::/sysssyMMMMMMMMMNNNNNNNNNMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMNNNNNNm++/++++/::::::+hyssssoooooooooooooo+++++++++++++++++++++++++++++++++/::::::::::::::::::::/yysssyNMMMMMMMNNNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMNNNNNNNh+++++++++::-:/yhyssssooooooooooooooo++++++++++++++++++++++++++++ooo/:::::::::::/oossso++oshssssymMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMNNNNNNNy++++++osssooshhysssssooooooooooooo+o++++++++++++++oooooo++++ooooooo+::/::::::oyyssoooo+osssssssymMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMNNNNNNNy++osssssssssssssssssssooooooooooooo+++++++++++++++oooooooooooooooooo+//---::sysooooooooossssooosdMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMNNNNNNNy+oyyyyyssssssssssssssssooooooooooooo++++++++++++++oooooooooooooooooooooooosyysooooooooosssooooosdMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMNNNNNNNyosyyyyyyssssssssssssssssssoooooooooo+++++++++++++++ooooooooooooooooooooooooooooooooosssssssossssmMMMMMMMNNNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMNNNNNNNhosyyyyyyyssssssssssssssssssoooooooo+++++++++++++++++ooooooooooooooooooooooooooooooosssssssssssyyNMMMMMMMNNNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMNNNNNNdosyyyyyyyyysssssssssssssssssooooooooo++++++++++++++++ooooooooooooooooooooooooooosssssssssssssssmMMMMMMMMMMNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMNNNNNNNosyyyyyyyyyyysssssssssssssssssssssoooo++++++++++++++++++ooooooooooooooooooooosssssssssssssssyydMMMMMMMMMMMNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMNNNNNNNysyyyyyyyyyyyyysssssssssssssssssssssssooo+++++++++++++++++++ooooooooooooosssssssssssssssssyyydNMMMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMNNNNNNNdoyyyyyyyyyyyyyyyysssssssssssssssssssssso+++++++++++++++++++++oooooooosssssssssssssssssyyyyyhNMMMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMNNNNNNNssyyyyyyyyyyyyyyyyyyysssssssssssssssssssoo+++++++++++++++++++ooooooooosssssssssssssyyyyyyydNMMMMMMMMMMMNNNNNNNNNNMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMNNNNNNNdoyyyyyyyyyyyyyyyyyyyyyyyssssssssssssssssssoooo++++++++++++ooooooooooossssssssssyyyyyyyyydNMMMMMMMMMMMMMMNNNNNNNNMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMNNNNNNNysyyyyyyyyyyyyyyyyyyyyyyyyyyssssssssssssssssssssoo+++++++ooooooooooooosssssyyyyyyyyyyyhdNMMMMMMMMMMMMMMNNNNNNNNMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMNNNNNNNsyyyhhyhhhhhhhhhhyyyyyyyyyyyyyyyysssssssssssssssso+++oooooooooooooooosyyyyyyyyyyyyyyhdNMMMMMMMMMMMMMMNNNNNNNNMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMNNNNNNNmsyhhhhhhhhhhhhhhhhhyyyyyyyyyyyyyyyyyyyyyyssssssssooooooooooooooooooosyyyyyyyyyyyyhhmMMMMMMMMMMMMMMMNNNNNNNNNMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMNNNNNNNdsyhhhhhhhhhhhhhhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyysooooooooooooooooossyyyyyyyyyyhhhdmMMMMMMMMMMMMMMMMMNNNNNNNMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMNNNNNNNdsyhhhhhhhhhhhhhhhhhhhhhhhyyyyyyyyyyyyyyyyyyyyysooooooooooooooossssyyyyyhhhhhhhdNMMMMMMMMMMMMMMMMNNNNNNNNMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMNNNNNNNdsyhhhhhhhhhhhhhhhhhhhhhhhhhhyyyyyyyyyyyyyyyyysooooooooooosssssssyhhhhhhhhhhhdNMMMMMMMMMMMMMMMNNNNNNNNNMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMNNNNNNNmsyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyyyyyysoooooosssssssssssyhhhhhhhhhdmNMMMMMMMMMMMMMMMMMMNNNNNNMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMNNNNNNNmyshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyyssssssssssssssshhhhhhhhddmNMMMMMMMMMMMMMMMMMNNNNNNNMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNhsyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhyssssssssyyyyhddddddddmNMMMMMMMMMMMMMMMMNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNmyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhssssyyyyyyyddddddddmNMMMMMMMMMMMMMMMNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNdyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdddddhyyyyyyyyyhdddddddmNMMMMMMMMMMMMMNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNdyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhddddddddddyyyyyyyyyhdddddddmNMMMMMMMMMMNmmNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNdyyhhhhhhhhhhhhhhhhhhhhhhhhhdddddddddddddddddyyyyyyyhddddddddmNNNMMNNNNmdhdNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNdyyhhhhhhhhhhhhhhddddddddddddddddddddddddddhyyyyyhhdddddddddmmmmmmmdyydNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNmhyyhhhhddddddddddddddddddddddddddddddddddyyhhhhdddddddddddddddhyhmNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNmhyyhhdddddddddddddddddddddddddddddddddhhhhhdddddddddddddhyhdNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNmdyyhhhdddddddddddddddddddddddddddddddddddddddddddhyyhmNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNmhhyyhhhdddddddddddddddddddddddddddddddddhhyhhdmNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNmddhyyyhhhhdddddddddddddddddddhhhyyhhdmNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNmmddhhhhhyyyyyyyyyhhhhhddmmNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNNNNNNNNNNNNNNNNNNNNNNNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
 -->
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -46,8 +117,8 @@
                 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                     <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
                     <!--<a class="mdl-navigation__link" href="blog.html">Blog</a>-->
-                    <a class="mdl-navigation__link" href="about.html">About</a>
-                    <a class="mdl-navigation__link" href="contact.html">Contact</a>
+                    <a class="mdl-navigation__link" href="about.html">Información</a>
+                    <a class="mdl-navigation__link" href="contact.html">Contacto</a>
                 </nav>
             </div>
         </header>
@@ -55,8 +126,8 @@
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
                 <a class="mdl-navigation__link is-active" href="index.html">Portfolio</a>
                 <!--<a class="mdl-navigation__link" href="blog.html">Blog</a>-->
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
+                <a class="mdl-navigation__link" href="about.html">Información</a>
+                <a class="mdl-navigation__link" href="contact.html">Contacto</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -105,7 +176,16 @@
                                 El juego final se depura y se crean todos los elementos gráficos y animaciones necesarios para el correcto funcionamiento de la aplicación, la base de datos en vivo se implementa en JSON gracias a Firebase.
                             </p>
                         </div>
+                        <div class="mdl-cell mdl-cell--5-col">
+                        </div>
+                        <div class="mdl-cell mdl-cell--4-col">
+                        <a href="indexjuego" target="_blank">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="marronbutton">
+                          ENLACE AL JUEGO
+                        </button></a>
+                      </div>
                     </div>
+
                 </div>
             </div>
             <footer class="mdl-mini-footer">
