@@ -32,8 +32,11 @@
     padding: 16px 16px 0;
 }
 #positive{
-  /*margin-top:-7%;*/
+  margin-top:-7%;
   color: rgba(14, 28, 108, 0);
+}
+#negative{
+  margin-top:-2%;
 }
 .dialog-button-bar {
     text-align: center;
