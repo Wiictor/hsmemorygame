@@ -153,6 +153,8 @@
         <img src="images/ficha.png" id="ficha2" class="draggable" alt="medio">
         <img src="images/ficha.png" id="ficha3" class="draggable" alt="dificil">
       </div>
+      <div id="iconaccept" style="background-color: red; border-radius: 50%; width: 300px; height: 300px; margin-left: 42%;margin-top: 2%;">
+      </div>
     </div>
   </main>
 </div>
@@ -179,11 +181,19 @@
      <script src="scripts/main.js"></script>
     <script>
     $(function(){
-    $('.draggable').draggable({ scroll: true, cursor: "move"});
+    $('.draggable').draggable({ scroll: true, cursor: "move", revert: true,scroll: false,stack: ".draggable",containment: "document"});
       });
   $(".draggable").hover(function () {
       $(this).toggleClass("glow");
   });
+   $('#iconaccept').droppable( {
+     drop: handleDropEvent
+   } );
+
+ function handleDropEvent( event, ui ) {
+   var draggable = ui.draggable;
+   alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
+ }
   </script>
 </body>
 </html>

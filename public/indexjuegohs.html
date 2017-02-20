@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />-->
+	<title>Hearthstone Game Card</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/core.css">
+	<link rel="shortcut icon" href="media/Cards.png">
+	<link rel="stylesheet" href="css/mdl-jquery-modal-dialog.css">
+</head>
+<body>
+	<div id="rare"></div>
+	<div id="container">
+		<div id="load">
+			<p>Cargando el juego...</p>
+			<div style="margin-top:20%; position:absolute; margin-left:45%;">
+			<img src="media/world.png" style="position:absolute; top: 0;left: 0;" alt="" >
+			<img src="media/cat.png" style="position:absolute; top: 0;left: 0;" alt="" id="logocat">
+			</div>
+		</div>
+		<!-- <div id="iconaccept" style="background-color: rgba(111, 186, 96, 0.54); border-radius: 50%; width: 18%; height:32%;position:absolute;z-index:6000; margin-left:41%;margin-top:20%;overflow:visible;"></div> -->
+		<div id="contenedormenu">
+	<div id="userNav">
+<div id="iconaccept" style="border-radius: 50%; width: 35%; height:35%;position:absolute; margin-left:83%;margin-top:36%;overflow:visible;"></div>
+<div id="facilcont" style="background:url('media/containerfacil.png') no-repeat; background-size: cover; width:20%; height:27%; position:absolute; margin-top:8%; margin-left:10%;">
+	<img src="media/medal_key_11.png" width=90% alt="medalla facil" class="draggable" value="0">
+</div>
+<div id="normalcont" style="background:url('media/containernormal.png') no-repeat; background-size: cover; width:20%; height:27%; position:absolute; margin-top:38%; margin-left:10%;">
+	<img src="media/medal_key_12.png" width=90% alt="medalla normal" class="draggable" value="1">
+</div>
+<div id="dificilcont" style="background:url('media/containerdificil.png') no-repeat; background-size: cover; width:20%; height:27%; position:absolute; margin-top:68%; margin-left:10%;">
+	<img src="media/medal_key_13.png" width=90% alt="medalla dificil" class="draggable" value="2">
+</div>
+</div>
+	</div>
+		<div id="contenedormenu2">
+			<div id="userNav2">
+				<div id="user-container" style="float:right; margin-right:10%; margin-top: 10%;">
+					<div hidden id="user-pic"></div>
+					<div hidden id="user-name"></div>
+					<button hidden id="sign-out" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+						Sign-out
+					</button>
+					<button id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+						<i class="material-icons">account_circle</i>Sign-in with Google
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="blockcards2">
+		</div>
+		<div id="blockcards">
+			<img src='media/invisible.png' alt='' width='100%' height='100%'>
+		</div>
+		<div id="ajustes"></div>
+		<div class="musica" style="position:absolute; z-index:100; margin-top:2%; margin-left:1%;" >
+			<i class="mdi mdi-volume-high mdi-48px mdi-light" id="buttonmusic"></i>
+			<audio id="boardmusic" loop source src="sounds/boardmusic.ogg" type="audio/ogg">
+		</audio>
+		</div>
+		<div id="timer">
+			<!-- <p style="margin-top:32%; font-size:2em;"> -->
+				<div id="tiempo">
+					<span id="horas">00</span>
+					<span>:</span>
+					<span id="minutos">00</span>
+					<span>:</span>
+					<span id="segundos">00</span>
+				</div>
+			<!-- </p> -->
+		</div>
+		<!-- <button id="nextCard" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" >Loading Data...</button> -->
+		<div id="vidauser"  style="position:absolute; z-index:200; width:15%; height:27%; margin-left:48%; margin-top:45%;">
+		<span id="spanvida"style="
+   margin-left: 4%;
+   margin-top: 11%;
+   font-size:2em;
+   color:white;
+   -webkit-text-stroke-width: 1.2px;
+   -webkit-text-stroke-color: black;
+   position: absolute;
+   ">0</span>
+	 <img src="media/drophp.png" alt="">
+		</div>
+	<div class="cardcontainer1">
+		<div  id="1" class="cartahs">
+			<div class="front">
+			 	<div class="card">
+	  		</div>
+			</div>
+	  	<div class="back">
+	    <img src="" class="pruebaimg" alt="">
+	  	</div>
+		</div>
+	<div  id="2" class="cartahs">
+		<div class="front">
+			<div class="card">
+			</div>
+		</div>
+		<div class="back">
+		<img src="" class="pruebaimg" alt="">
+		</div>
+	</div>
+	<div  id="3" class="cartahs">
+		<div class="front">
+			<div class="card">
+			</div>
+		</div>
+		<div class="back">
+		<img src="" class="pruebaimg" alt="">
+		</div>
+	</div>
+	<div  id="4" class="cartahs">
+		<div class="front">
+			<div class="card">
+			</div>
+		</div>
+		<div class="back">
+		<img src="" class="pruebaimg" alt="">
+		</div>
+	</div>
+	<div  id="5" class="cartahs">
+		<div class="front">
+			<div class="card">
+			</div>
+		</div>
+		<div class="back">
+		<img src="" class="pruebaimg" alt="">
+		</div>
+	</div>
+</div>
+<div class="cardcontainer2">
+	<div  id="6" class="cartahs">
+		<div class="front">
+			<div class="card">
+			</div>
+		</div>
+		<div class="back">
+		<img src="" class="pruebaimg" alt="">
+		</div>
+	</div>
+<div  id="7" class="cartahs">
+	<div class="front">
+		<div class="card">
+		</div>
+	</div>
+	<div class="back">
+	<img src="" class="pruebaimg" alt="">
+	</div>
+</div>
+<div  id="8" class="cartahs">
+	<div class="front">
+		<div class="card">
+		</div>
+	</div>
+	<div class="back">
+	<img src="" class="pruebaimg" alt="">
+	</div>
+</div>
+<div  id="9" class="cartahs">
+	<div class="front">
+		<div class="card">
+		</div>
+	</div>
+	<div class="back">
+	<img src="" class="pruebaimg" alt="">
+	</div>
+</div>
+<div  id="10" class="cartahs">
+	<div class="front">
+		<div class="card">
+		</div>
+	</div>
+	<div class="back">
+	<img src="" class="pruebaimg" alt="">
+	</div>
+</div>
+</div>
+<div class="cardcontainer3">
+  <div class="outer" id="contenedora">
+</div>
+<div class="outer inferior" id="contenedorb">
+</div>
+<div class="mdl-tooltip" data-mdl-for="contenedora" id="tooltipa">
+</div>
+<div class="mdl-tooltip" data-mdl-for="contenedorb" id="tooltipb">
+</div>
+</div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<script src="http://biostall.com/wp-content/uploads/2010/07/jquery-swapsies.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<!-- <script src="js/tiempo.js"></script> -->
+	<script src="js/mdl-jquery-modal-dialog.js"></script>
+	<script src="js/script.js"></script>
+	<!-- <script src="js/script2.js"></script> -->
+	<script>
+	</script>
+</body>
+</html>
