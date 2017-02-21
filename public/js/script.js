@@ -17,7 +17,8 @@ rankingRef.on('value', function(snapshot) {
   });
   var salida = "";
   for(var i = puntuaciones.length-1; i >= 0;i--){
-    salida += "<li>"+ nombres[i] + ", puntuacion: " + puntuaciones[i]+"</li>";
+    var subnombre = nombres[i];
+    salida += "<li><img src='"+fotos[i]+"' width='5%'/>" + subnombre.substr(0,10) + ", puntuacion: " + puntuaciones[i]+"</li>";
   }
   $("#facil-panel ol").html(salida);
 });
@@ -34,7 +35,8 @@ rankingRef1.on('value', function(snapshot) {
   });
   var salida = "";
   for(var i = puntuaciones.length-1; i >= 0;i--){
-    salida += "<li>"+ nombres[i] + ", puntuacion: " + puntuaciones[i]+"</li>";
+    var subnombre = nombres[i];
+    salida += "<li><img src='"+fotos[i]+"' width='5%'/>" + subnombre.substr(0,10) + ", puntuacion: " + puntuaciones[i]+"</li>";
   }
   $("#normal-panel ol").html(salida);
 });
@@ -51,7 +53,8 @@ rankingRef2.on('value', function(snapshot) {
   });
   var salida = "";
   for(var i = puntuaciones.length-1; i >= 0;i--){
-    salida += "<li>"+ nombres[i] + ", puntuacion: " + puntuaciones[i]+"</li>";
+    var subnombre = nombres[i];
+    salida += "<li><img src='"+fotos[i]+"' width='5%'/>" + subnombre.substr(0,10) + ", puntuacion: " + puntuaciones[i]+"</li>";
   }
   $("#dificil-panel ol").html(salida);
 });
@@ -69,6 +72,7 @@ function onSignIn() {
         user = result.user;
         profilePicUrl = user.photoURL;
         userName = user.displayName;
+        $("#fotouser").html('<img src="'+profilePicUrl+'" alt="" style="border-radius:50%;width:40%;">');
         $("#user-pic").html("<img src='"+profilePicUrl+"' style='border-radius:50%; width:100%'/>");
         $("#user-name").text(userName);
         $("#user-pic").css('display','block');
@@ -89,6 +93,7 @@ function signOut() {
             user = undefined;
             profilePicUrl = undefined;
             userName = undefined;
+            $("#fotouser").html('');
             $("#user-pic").css('display','none');
             $("#user-name").css('display','none');
             $("#sign-out").css('display','none');
